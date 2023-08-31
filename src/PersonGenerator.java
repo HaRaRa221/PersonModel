@@ -1,7 +1,8 @@
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.util.Arraylist;
+import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import static java.nio.file.StandardOpenOption.CREATE;
@@ -10,16 +11,20 @@ public class PersonGenerator {
     public static void main(String[] args)
     {
         ArrayList<String> Dpeople = new ArrayList<>();
+        Scanner in = new Scanner (System.in);
+
         String ID = "";
         String fName = "";
         String lName = "";
-        String DPeopleData = "";
+        String DpeopleData = "";
         String title = "";
         int YOB = 0;
 
-        Scanner in = new Scanner (System.in);
 
-        ArrayList<String> Dpeople = new ArrayList<>();
+        File workingDirectory = new File(System.getProperty("user.dir"));
+        Path file = Paths.get(workingDirectory.getPath() + "\\src\\PersonTextData.txt");
+
+
 
         boolean done = false;
         do {
@@ -30,13 +35,13 @@ public class PersonGenerator {
             YOB = SafeInput.getRangedInt(in, "Enter your birth year in 4 digits", 1000, 9999);
 
             DpeopleData = ID + ", " + fName + ", " + lName + ", " + title + ", " + YOB;
-            DPeople.add(DPeopleData);
+            Dpeople.add(DpeopleData);
 
-            done = SafeInput.getYNConfirm(in, "Are you finished with the people data?")
+            done = SafeInput.getYNConfirm(in, "Are you finished with the people data?");
 
         } while (!done);
 
-        for (String d: DPeopleData) {
+        for (String d: Dpeople) {
             System.out.println(d);
         }
 
@@ -49,7 +54,7 @@ public class PersonGenerator {
                     new BufferedWriter(new OutputStreamWriter(out));
 
 
-            for(String Dp : DPeopleData)
+            for(String rec : Dpeople)
             {
                 writer.write(rec, 0, rec.length());
                 writer.newLine();
