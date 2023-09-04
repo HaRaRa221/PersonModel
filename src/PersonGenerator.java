@@ -28,7 +28,7 @@ public class PersonGenerator {
 
         boolean done = false;
         do {
-            ID = SafeInput.getNonZeroLenString(in, "Enter the 6 digit ID: ");
+            ID = SafeInput.getNonZeroLenString(in, "Enter the 6 digit ID");
             fName = SafeInput.getNonZeroLenString(in, "What is the first name of person");
             lName = SafeInput.getNonZeroLenString(in, "What is the last name of person");
             title = SafeInput.getNonZeroLenString(in, "What title does the person go by (Mr., Mrs., Ms., Dr., etc.");
@@ -71,3 +71,4 @@ public class PersonGenerator {
     }
 
 }
+
