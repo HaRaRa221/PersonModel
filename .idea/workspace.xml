@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="16626585-7314-4509-967f-de8a2f3568ce" name="Changes" comment="Added Person Generator, Person Reader, and Safe Input;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PersonGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PersonGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PersonModel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PersonModel.iml" afterDir="false" />
+    <list default="true" id="16626585-7314-4509-967f-de8a2f3568ce" name="Changes" comment="Changed person reader">
+      <change beforePath="$PROJECT_DIR$/src/PersonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PersonReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693520418944</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Changed person reader">
+      <created>1693849675298</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693849675298</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,6 +126,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Person Generator, Person Reader, and Safe Input; worked on Person generator data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Person Generator, Person Reader, and Safe Input; worked on Person generator data" />
+    <MESSAGE value="Changed person reader" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed person reader" />
   </component>
 </project>
